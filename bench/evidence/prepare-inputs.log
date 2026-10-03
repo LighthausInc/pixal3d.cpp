@@ -1,0 +1,186 @@
+Error in bpy.app.handlers.load_pre[1]:
+Traceback (most recent call last):
+  File "/Users/davidsarno/Library/Application Support/Blender/5.2/extensions/user_default/auto_rig_pro/src/auto_rig.py", line 46866, in cleanup_line_fx
+    bpy.types.SpaceView3D.draw_handler_remove(handles_lines[0], 'WINDOW')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: callback_remove(handler): null handler given, invalid or already removed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/davidsarno/Library/Application Support/Blender/5.2/extensions/user_default/auto_rig_pro/src/auto_rig.py", line 46870, in cleanup_line_fx
+    if bpy.context.scene.arp_debug_mode:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Scene' object has no attribute 'arp_debug_mode'
+Error in bpy.app.handlers.load_pre[2]:
+Traceback (most recent call last):
+  File "/Users/davidsarno/Library/Application Support/Blender/5.2/extensions/user_default/auto_rig_pro/src/auto_rig_smart.py", line 7531, in cleanup
+    bpy.types.SpaceView3D.draw_handler_remove(handles[0], 'WINDOW')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+ValueError: callback_remove(handler): null handler given, invalid or already removed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/davidsarno/Library/Application Support/Blender/5.2/extensions/user_default/auto_rig_pro/src/auto_rig_smart.py", line 7535, in cleanup
+    if bpy.context.scene.arp_debug_mode:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Scene' object has no attribute 'arp_debug_mode'
+/Users/davidsarno/Documents/ChatGPT/3DGen/pixal3d.cpp/bench/prepare_inputs.py:9: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name); m.diffuse_color=(*color,1); m.use_nodes=True; bs=m.node_tree.nodes.get('Principled BSDF'); bs.inputs['Base Color'].default_value=(*color,1); bs.inputs['Metallic'].default_value=metal; bs.inputs['Roughness'].default_value=.38; return m
+Reloading external rigs...
+Reloading external metarigs...
+Auto-Rig Pro preferences loaded successfully!
+Update armature presets...
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+08:20:48 | INFO: Starting glTF 2.0 export
+08:20:48 | INFO: Extracting primitive: Cube
+08:20:48 | INFO: Primitives created: 1
+08:20:48 | INFO: Extracting primitive: Cube.001
+08:20:48 | INFO: Primitives created: 1
+08:20:48 | INFO: Extracting primitive: Cube.002
+08:20:48 | INFO: Primitives created: 1
+08:20:48 | INFO: Extracting primitive: Cylinder
+08:20:48 | INFO: Primitives created: 1
+08:20:48 | INFO: Extracting primitive: Cylinder.001
+08:20:48 | INFO: Primitives created: 1
+08:20:48 | INFO: Extracting primitive: Cylinder.002
+08:20:48 | INFO: Primitives created: 1
+08:20:48 | INFO: Extracting primitive: Cylinder.003
+08:20:48 | INFO: Primitives created: 1
+08:20:48 | INFO: Extracting primitive: Cube.009
+08:20:48 | INFO: Primitives created: 1
+08:20:48 | INFO: Extracting primitive: Cube.010
+08:20:48 | INFO: Primitives created: 1
+08:20:48 | INFO: Extracting primitive: Cube.011
+08:20:48 | INFO: Primitives created: 1
+08:20:48 | INFO: Extracting primitive: Cube.012
+08:20:48 | INFO: Primitives created: 1
+08:20:48 | INFO: Extracting primitive: Cube.013
+08:20:48 | INFO: Primitives created: 1
+08:20:48 | INFO: Extracting primitive: Cube.014
+08:20:48 | INFO: Primitives created: 1
+08:20:48 | INFO: Extracting primitive: Cube.007
+08:20:48 | INFO: Primitives created: 1
+08:20:48 | INFO: Extracting primitive: Cube.006
+08:20:48 | INFO: Primitives created: 1
+08:20:48 | INFO: Extracting primitive: Cube.003
+08:20:48 | INFO: Primitives created: 1
+08:20:48 | INFO: Extracting primitive: Cube.004
+08:20:48 | INFO: Primitives created: 1
+08:20:48 | INFO: Extracting primitive: Cube.005
+08:20:48 | INFO: Primitives created: 1
+08:20:48 | INFO: Extracting primitive: Cube.008
+08:20:48 | INFO: Primitives created: 1
+08:20:48 | INFO: Finished glTF 2.0 export in 0.02785491943359375 s
+00:02.752  render           | Saved: '/Users/davidsarno/Documents/ChatGPT/3DGen/pixal3d.cpp/bench/inputs/monitor/front.png'
+00:03.293  render           | Saved: '/Users/davidsarno/Documents/ChatGPT/3DGen/pixal3d.cpp/bench/inputs/monitor/back.png'
+00:03.940  render           | Saved: '/Users/davidsarno/Documents/ChatGPT/3DGen/pixal3d.cpp/bench/inputs/monitor/left.png'
+00:04.409  render           | Saved: '/Users/davidsarno/Documents/ChatGPT/3DGen/pixal3d.cpp/bench/inputs/monitor/right.png'
+Error in bpy.app.handlers.load_pre[1]:
+Traceback (most recent call last):
+  File "/Users/davidsarno/Library/Application Support/Blender/5.2/extensions/user_default/auto_rig_pro/src/auto_rig.py", line 46866, in cleanup_line_fx
+    bpy.types.SpaceView3D.draw_handler_remove(handles_lines[0], 'WINDOW')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: callback_remove(handler): null handler given, invalid or already removed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/davidsarno/Library/Application Support/Blender/5.2/extensions/user_default/auto_rig_pro/src/auto_rig.py", line 46870, in cleanup_line_fx
+    if bpy.context.scene.arp_debug_mode:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Scene' object has no attribute 'arp_debug_mode'
+Error in bpy.app.handlers.load_pre[2]:
+Traceback (most recent call last):
+  File "/Users/davidsarno/Library/Application Support/Blender/5.2/extensions/user_default/auto_rig_pro/src/auto_rig_smart.py", line 7531, in cleanup
+    bpy.types.SpaceView3D.draw_handler_remove(handles[0], 'WINDOW')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+ValueError: callback_remove(handler): null handler given, invalid or already removed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/davidsarno/Library/Application Support/Blender/5.2/extensions/user_default/auto_rig_pro/src/auto_rig_smart.py", line 7535, in cleanup
+    if bpy.context.scene.arp_debug_mode:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Scene' object has no attribute 'arp_debug_mode'
+
+08:20:52 | INFO: Starting glTF 2.0 export
+08:20:52 | INFO: Extracting primitive: Cylinder
+08:20:52 | INFO: Primitives created: 1
+08:20:52 | INFO: Extracting primitive: Cube.001
+08:20:52 | INFO: Primitives created: 1
+08:20:52 | INFO: Extracting primitive: Cube
+08:20:52 | INFO: Primitives created: 1
+08:20:52 | INFO: Extracting primitive: Cube.002
+08:20:52 | INFO: Primitives created: 1
+08:20:52 | INFO: Finished glTF 2.0 export in 0.0071239471435546875 s
+00:05.040  render           | Saved: '/Users/davidsarno/Documents/ChatGPT/3DGen/pixal3d.cpp/bench/inputs/probe/front.png'
+00:05.540  render           | Saved: '/Users/davidsarno/Documents/ChatGPT/3DGen/pixal3d.cpp/bench/inputs/probe/back.png'
+00:06.020  render           | Saved: '/Users/davidsarno/Documents/ChatGPT/3DGen/pixal3d.cpp/bench/inputs/probe/left.png'
+00:06.519  render           | Saved: '/Users/davidsarno/Documents/ChatGPT/3DGen/pixal3d.cpp/bench/inputs/probe/right.png'
+Error in bpy.app.handlers.load_pre[1]:
+Traceback (most recent call last):
+  File "/Users/davidsarno/Library/Application Support/Blender/5.2/extensions/user_default/auto_rig_pro/src/auto_rig.py", line 46866, in cleanup_line_fx
+    bpy.types.SpaceView3D.draw_handler_remove(handles_lines[0], 'WINDOW')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: callback_remove(handler): null handler given, invalid or already removed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/davidsarno/Library/Application Support/Blender/5.2/extensions/user_default/auto_rig_pro/src/auto_rig.py", line 46870, in cleanup_line_fx
+    if bpy.context.scene.arp_debug_mode:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Scene' object has no attribute 'arp_debug_mode'
+Error in bpy.app.handlers.load_pre[2]:
+Traceback (most recent call last):
+  File "/Users/davidsarno/Library/Application Support/Blender/5.2/extensions/user_default/auto_rig_pro/src/auto_rig_smart.py", line 7531, in cleanup
+    bpy.types.SpaceView3D.draw_handler_remove(handles[0], 'WINDOW')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+ValueError: callback_remove(handler): null handler given, invalid or already removed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/davidsarno/Library/Application Support/Blender/5.2/extensions/user_default/auto_rig_pro/src/auto_rig_smart.py", line 7535, in cleanup
+    if bpy.context.scene.arp_debug_mode:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Scene' object has no attribute 'arp_debug_mode'
+
+08:20:54 | INFO: Starting glTF 2.0 export
+08:20:54 | INFO: Extracting primitive: Cube.001
+08:20:54 | INFO: Primitives created: 1
+08:20:54 | INFO: Extracting primitive: blade
+08:20:54 | INFO: Primitives created: 1
+08:20:54 | INFO: Extracting primitive: Cylinder.001
+08:20:54 | INFO: Primitives created: 1
+08:20:54 | INFO: Extracting primitive: Cylinder.002
+08:20:54 | INFO: Primitives created: 1
+08:20:54 | INFO: Extracting primitive: Cylinder.003
+08:20:54 | INFO: Primitives created: 1
+08:20:54 | INFO: Extracting primitive: Cylinder.004
+08:20:54 | INFO: Primitives created: 1
+08:20:54 | INFO: Extracting primitive: Cylinder.005
+08:20:54 | INFO: Primitives created: 1
+08:20:54 | INFO: Extracting primitive: Cylinder.006
+08:20:54 | INFO: Primitives created: 1
+08:20:54 | INFO: Extracting primitive: Cylinder.007
+08:20:54 | INFO: Primitives created: 1
+08:20:54 | INFO: Extracting primitive: Cylinder.008
+08:20:54 | INFO: Primitives created: 1
+08:20:54 | INFO: Extracting primitive: Cylinder
+08:20:54 | INFO: Primitives created: 1
+08:20:54 | INFO: Extracting primitive: Cube
+08:20:54 | INFO: Primitives created: 1
+08:20:54 | INFO: Finished glTF 2.0 export in 0.014354944229125977 s
+00:07.171  render           | Saved: '/Users/davidsarno/Documents/ChatGPT/3DGen/pixal3d.cpp/bench/inputs/laryngoscope/front.png'
+00:07.645  render           | Saved: '/Users/davidsarno/Documents/ChatGPT/3DGen/pixal3d.cpp/bench/inputs/laryngoscope/back.png'
+00:08.124  render           | Saved: '/Users/davidsarno/Documents/ChatGPT/3DGen/pixal3d.cpp/bench/inputs/laryngoscope/left.png'
+00:08.625  render           | Saved: '/Users/davidsarno/Documents/ChatGPT/3DGen/pixal3d.cpp/bench/inputs/laryngoscope/right.png'
+
+Blender 5.2.0 LTS (hash fbe6228777e7 built 2026-07-14 01:31:22)
+
+Blender quit

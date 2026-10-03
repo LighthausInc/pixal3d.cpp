@@ -1,0 +1,31 @@
+{
+  "raw": {
+    "triangles": 5876,
+    "connected_components": 19,
+    "loose_vertices": 0,
+    "wire_edges": 0,
+    "boundary_edges": 0,
+    "holes_boundary_loops": 0,
+    "nonmanifold_edges": 0,
+    "uv_texel_density_px_per_m": null,
+    "density_note": "Area-weighted first material texture; scale assumes nominal class height. Boundary loops are hole proxies, including intentional openings. Components welded per object at 1e-6 units.",
+    "textures": {}
+  },
+  "cleaned": {
+    "triangles": 998,
+    "connected_components": 19,
+    "loose_vertices": 0,
+    "wire_edges": 0,
+    "boundary_edges": 0,
+    "holes_boundary_loops": 0,
+    "nonmanifold_edges": 0,
+    "uv_texel_density_px_per_m": null,
+    "density_note": "Area-weighted first material texture; scale assumes nominal class height. Boundary loops are hole proxies, including intentional openings. Components welded per object at 1e-6 units.",
+    "textures": {}
+  },
+  "tri_budget": 1000,
+  "within_budget": true,
+  "cleanup": "weld at 1e-6, triangulate, iterative collapse decimation; UVs/materials retained; no manual repairs",
+  "blender_version": "5.2.0 LTS",
+  "clinical_accuracy": "unreviewed"
+}

@@ -1,0 +1,56 @@
+schema_version: 1
+benchmark: issue-14
+baseline: 1f432fd3f0689c504fa1e9b15b038c33584174d1
+trellis_commit: c0bed38c1578f7e36e3e50c8ff1e38fa0d47583f
+storyboard_commit: c3ab9f070aea30884d51934893b3b3317c0c44ec
+resolutions: [512, 1024, 1536]
+seeds: [42, 123, 2026]
+settings: {steps: 12, atlas: 2048, timeout_seconds: 7200}
+assets:
+  monitor: {tri_budget: 8000, nominal_height_m: 1.4, input: inputs/monitor, panels: [iut-panel-04-safe-path-with-ultrasound.jpg, amnio-panel-04-planning-an-infusion.jpg]}
+  probe: {tri_budget: 3000, nominal_height_m: 0.16, input: inputs/probe, panels: [iut-panel-04-safe-path-with-ultrasound.jpg, amnio-panel-04-planning-an-infusion.jpg]}
+  laryngoscope: {tri_budget: 4000, nominal_height_m: 0.22, input: inputs/laryngoscope, panels: [panel-10-reveal-vocal-cords.png, panel-11-place-breathing-tube.png]}
+models:
+  pixal-mv-q8: {engine: pixal, mode: mv, quant: q8_0, manifest: ../../pixal3d-baseline/models/pixal3d-q8_0-v1/pixal3d-models.json, hf_repo: raven38/pixal3d-q8_0-v1, hf_revision: null, weights: weights/pixal-mv-q8}
+  pixal-mv-f16: {engine: pixal, mode: mv, quant: f16, manifest: ../../pixal3d-baseline/models/pixal3d-f16-v1/pixal3d-models.json, hf_repo: raven38/pixal3d-f16-v1, hf_revision: null, weights: weights/pixal-mv-f16}
+  pixal-sv-q8: {engine: pixal, mode: sv, quant: q8_0, manifest: ../../pixal3d-baseline/models/pixal3d-sv-q8_0-v1/pixal3d-models.json, hf_repo: raven38/pixal3d-sv-q8_0-v1, hf_revision: null, weights: weights/pixal-sv-q8}
+  pixal-sv-f16: {engine: pixal, mode: sv, quant: f16, manifest: null, hf_repo: null, hf_revision: null, weights: weights/pixal-sv-f16, blocked: 'No pinned SV f16 manifest in baseline; no conversion or untrusted substitution.'}
+  trellis2-q8: {engine: trellis, mode: trellis, quant: q8_0, manifest: null, hf_repo: ilintar/trellis2-gguf, hf_revision: null, weights: weights/trellis2-q8, blocked: 'No trusted SHA-256 model manifest supplied for TRELLIS.2.'}
+  trellis2-f16: {engine: trellis, mode: trellis, quant: f16, manifest: null, hf_repo: ilintar/trellis2-gguf, hf_revision: null, weights: weights/trellis2-f16, blocked: 'No trusted SHA-256 model manifest supplied for TRELLIS.2.'}
+  trellis-pixal-sv-q8: {engine: trellis, mode: pixal, quant: q8_0, manifest: null, hf_repo: null, hf_revision: null, weights: weights/trellis-pixal-sv-q8, blocked: 'Upstream names/conversion differ; vegax87/Pixal3D is outside the approved weight sources. Requires audited compatible pinned manifest.'}
+  trellis-pixal-sv-f16: {engine: trellis, mode: pixal, quant: f16, manifest: null, hf_repo: null, hf_revision: null, weights: weights/trellis-pixal-sv-f16, blocked: 'Requires audited compatible pinned manifest from allowed weight sources.'}
+hosts:
+  metal:
+    backend: Metal
+    platform: Darwin
+    machine: Apple M1 Max / 64 GB unified / 32 GPU cores
+    engines:
+      pixal: {repo: '../../pixal3d-baseline', binary: ../../pixal3d-baseline/build/trellis-cli, evidence: evidence/pixal-metal-build.json}
+      trellis: {repo: '../../trellis.cpp', binary: ../../trellis.cpp/build/trellis-cli, evidence: evidence/trellis-metal-build.json}
+  rtx-cuda:
+    backend: CUDA
+    platform: Windows
+    blocked: 'RTX host/access not provided.'
+    engines: {}
+  rtx-vulkan:
+    backend: Vulkan
+    platform: Windows
+    blocked: 'Same RTX host/access and Vulkan source build not provided.'
+    engines: {}
+  cloud-gpu:
+    backend: CUDA
+    platform: Linux
+    blocked: 'L4/A100 host and hourly cost not provided.'
+    hourly_usd: null
+    engines: {}
+cloud:
+  rodin:
+    enabled: false
+    blocked: 'No API key, approved credit ceiling or audited provider adapter; zero credits spent.'
+    requested_resolutions: [512, 1024, 1536]
+    note: 'Local voxel resolutions are not Rodin controls. Before enabling, map to documented provider settings and label non-equivalent comparisons.'
+evaluation:
+  dinov3_accepted_for_evaluation: false
+  shipping_approved: false
+  encoder_config: null
+  reference_policy: 'Own procedural renders guided by Lighthaus storyboard art; no clinical or patient images.'

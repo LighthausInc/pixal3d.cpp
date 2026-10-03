@@ -1,0 +1,160 @@
+[1/32] Building CXX object CMakeFiles/trellis_core.dir/src/dinov3.cpp.o
+[2/32] Building CXX object CMakeFiles/trellis_core.dir/src/trellis_sched.cpp.o
+[3/32] Building CXX object CMakeFiles/trellis_core.dir/src/ss_decoder.cpp.o
+[4/32] Building CXX object CMakeFiles/trellis_core.dir/src/dit.cpp.o
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/src/dit.cpp:222:27: warning: 'ggml_flash_attn_ext_set_prec' is deprecated: use ggml_prec_set_acc() instead [-Wdeprecated-declarations]
+  222 |             if (!fa_fast) ggml_flash_attn_ext_set_prec(o, GGML_PREC_F32);
+      |                           ^
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/ggml/include/ggml.h:2497:5: note: 'ggml_flash_attn_ext_set_prec' has been explicitly marked deprecated here
+ 2497 |     GGML_DEPRECATED(GGML_API void ggml_flash_attn_ext_set_prec(
+      |     ^
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/ggml/include/ggml.h:192:61: note: expanded from macro 'GGML_DEPRECATED'
+  192 | #    define GGML_DEPRECATED(func, hint) func __attribute__((deprecated(hint)))
+      |                                                             ^
+1 warning generated.
+[5/32] Building CXX object CMakeFiles/trellis_core.dir/src/trellis_debug.cpp.o
+[6/32] Building CXX object CMakeFiles/trellis_core.dir/src/flow_runner.cpp.o
+[7/32] Building CXX object CMakeFiles/trellis_core.dir/src/trellis_model.cpp.o
+[8/32] Building CXX object CMakeFiles/trellis_core.dir/src/pixal3d.cpp.o
+[9/32] Building CXX object CMakeFiles/trellis_core.dir/src/mesh_glb.cpp.o
+In file included from /Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/src/mesh_glb.cpp:21:
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_write.h:780:13: warning: 'sprintf' is deprecated: This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead. [-Wdeprecated-declarations]
+  780 |       len = sprintf(buffer, "EXPOSURE=          1.0000000000000\n\n-Y %d +X %d\n", y, x);
+      |             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_stdio.h:278:1: note: 'sprintf' has been explicitly marked deprecated here
+  278 | __deprecated_msg("This function is provided for compatibility reasons only.  Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.")
+      | ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h:227:48: note: expanded from macro '__deprecated_msg'
+  227 |         #define __deprecated_msg(_msg) __attribute__((__deprecated__(_msg)))
+      |                                                       ^
+1 warning generated.
+[10/32] Building CXX object CMakeFiles/trellis_core.dir/src/shape_decoder.cpp.o
+[11/32] Building CXX object CMakeFiles/trellis_core.dir/src/dual_grid.cpp.o
+[12/32] Building CXX object CMakeFiles/trellis_core.dir/src/naf.cpp.o
+[13/32] Building CXX object CMakeFiles/trellis_core.dir/src/sparse.cpp.o
+[14/32] Building CXX object CMakeFiles/trellis_core.dir/src/uv_overlap_cover.cpp.o
+[15/32] Building CXX object CMakeFiles/trellis_core.dir/thirdparty/meshoptimizer/simplifier.cpp.o
+[16/32] Building CXX object CMakeFiles/trellis_core.dir/src/tri_bvh.cpp.o
+[17/32] Building CXX object CMakeFiles/trellis_core.dir/src/birefnet.cpp.o
+[18/32] Building CXX object CMakeFiles/trellis_core.dir/src/decimate_qem.cpp.o
+[19/32] Building CXX object CMakeFiles/trellis_core.dir/src/remesh_dc.cpp.o
+[20/32] Building CXX object CMakeFiles/trellis_core.dir/src/mesh_shape.cpp.o
+[21/32] Building CXX object CMakeFiles/trellis_core.dir/src/preprocess.cpp.o
+In file included from /Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/src/preprocess.cpp:12:
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:760:31: warning: expression result unused [-Wunused-value]
+  760 |     STBIR__DEBUG_ASSERT(scale <= 1);
+      |                         ~~~~~ ^  ~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:778:31: warning: expression result unused [-Wunused-value]
+  778 |     STBIR__DEBUG_ASSERT(scale <= 1);
+      |                         ~~~~~ ^  ~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1041:56: warning: expression result unused [-Wunused-value]
+ 1041 |     STBIR__DEBUG_ASSERT(in_last_pixel - in_first_pixel <= (int)ceil(stbir__filter_info_table[filter].support(1/scale) * 2)); // Taken directly from stbir__get_coefficient_width() which we can't call because we don't know if we're horizontal or vertical.
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1046:41: warning: expression result unused [-Wunused-value]
+ 1046 |     STBIR__DEBUG_ASSERT(contributor->n1 >= contributor->n0);
+      |                         ~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1064:128: warning: expression result unused [-Wunused-value]
+ 1064 |     STBIR__DEBUG_ASSERT(stbir__filter_info_table[filter].kernel((float)(in_last_pixel + 1) + 0.5f - in_center_of_out, 1/scale) == 0);
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1066:38: warning: expression result unused [-Wunused-value]
+ 1066 |     STBIR__DEBUG_ASSERT(total_filter > 0.9);
+      |                         ~~~~~~~~~~~~ ^ ~~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1067:38: warning: expression result unused [-Wunused-value]
+ 1067 |     STBIR__DEBUG_ASSERT(total_filter < 1.1f); // Make sure it's not way off.
+      |                         ~~~~~~~~~~~~ ^ ~~~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1089:59: warning: expression result unused [-Wunused-value]
+ 1089 |      STBIR__DEBUG_ASSERT(out_last_pixel - out_first_pixel <= (int)ceil(stbir__filter_info_table[filter].support(scale_ratio) * 2)); // Taken directly from stbir__get_coefficient_width() which we can't call because we don't know if we're horizontal or vertical.
+      |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1094:41: warning: expression result unused [-Wunused-value]
+ 1094 |     STBIR__DEBUG_ASSERT(contributor->n1 >= contributor->n0);
+      |                         ~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1103:133: warning: expression result unused [-Wunused-value]
+ 1103 |     STBIR__DEBUG_ASSERT(stbir__filter_info_table[filter].kernel((float)(out_last_pixel + 1) + 0.5f - out_center_of_in, scale_ratio) == 0);
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1138:35: warning: expression result unused [-Wunused-value]
+ 1138 |         STBIR__DEBUG_ASSERT(total > 0.9f);
+      |                             ~~~~~ ^ ~~~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1139:35: warning: expression result unused [-Wunused-value]
+ 1139 |         STBIR__DEBUG_ASSERT(total < 1.1f);
+      |                             ~~~~~ ^ ~~~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1427:47: warning: expression result unused [-Wunused-value]
+ 1427 |         STBIR__DEBUG_ASSERT(ring_buffer_index != stbir_info->ring_buffer_begin_index);
+      |                             ~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1459:32: warning: expression result unused [-Wunused-value]
+ 1459 |         STBIR__DEBUG_ASSERT(n1 >= n0);
+      |                             ~~ ^  ~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1460:32: warning: expression result unused [-Wunused-value]
+ 1460 |         STBIR__DEBUG_ASSERT(n0 >= -stbir_info->horizontal_filter_pixel_margin);
+      |                             ~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1461:32: warning: expression result unused [-Wunused-value]
+ 1461 |         STBIR__DEBUG_ASSERT(n1 >= -stbir_info->horizontal_filter_pixel_margin);
+      |                             ~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1462:32: warning: expression result unused [-Wunused-value]
+ 1462 |         STBIR__DEBUG_ASSERT(n0 < stbir_info->input_w + stbir_info->horizontal_filter_pixel_margin);
+      |                             ~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1463:32: warning: expression result unused [-Wunused-value]
+ 1463 |         STBIR__DEBUG_ASSERT(n1 < stbir_info->input_w + stbir_info->horizontal_filter_pixel_margin);
+      |                             ~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1471:53: warning: expression result unused [-Wunused-value]
+ 1471 |                     STBIR__DEBUG_ASSERT(coefficient != 0);
+      |                                         ~~~~~~~~~~~ ^  ~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1480:53: warning: expression result unused [-Wunused-value]
+ 1480 |                     STBIR__DEBUG_ASSERT(coefficient != 0);
+      |                                         ~~~~~~~~~~~ ^  ~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1490:53: warning: expression result unused [-Wunused-value]
+ 1490 |                     STBIR__DEBUG_ASSERT(coefficient != 0);
+      |                                         ~~~~~~~~~~~ ^  ~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1501:53: warning: expression result unused [-Wunused-value]
+ 1501 |                     STBIR__DEBUG_ASSERT(coefficient != 0);
+      |                                         ~~~~~~~~~~~ ^  ~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1514:53: warning: expression result unused [-Wunused-value]
+ 1514 |                     STBIR__DEBUG_ASSERT(coefficient != 0);
+      |                                         ~~~~~~~~~~~ ^  ~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1537:25: warning: expression result unused [-Wunused-value]
+ 1537 |     STBIR__DEBUG_ASSERT(!stbir__use_width_upsampling(stbir_info));
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1555:53: warning: expression result unused [-Wunused-value]
+ 1555 |                     STBIR__DEBUG_ASSERT(coefficient != 0);
+      |                                         ~~~~~~~~~~~ ^  ~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1576:53: warning: expression result unused [-Wunused-value]
+ 1576 |                     STBIR__DEBUG_ASSERT(coefficient != 0);
+      |                                         ~~~~~~~~~~~ ^  ~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1598:53: warning: expression result unused [-Wunused-value]
+ 1598 |                     STBIR__DEBUG_ASSERT(coefficient != 0);
+      |                                         ~~~~~~~~~~~ ^  ~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1621:53: warning: expression result unused [-Wunused-value]
+ 1621 |                     STBIR__DEBUG_ASSERT(coefficient != 0);
+      |                                         ~~~~~~~~~~~ ^  ~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:1646:53: warning: expression result unused [-Wunused-value]
+ 1646 |                     STBIR__DEBUG_ASSERT(coefficient != 0);
+      |                                         ~~~~~~~~~~~ ^  ~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:2005:25: warning: expression result unused [-Wunused-value]
+ 2005 |     STBIR__DEBUG_ASSERT(!stbir__use_height_upsampling(stbir_info));
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:2079:66: warning: expression result unused [-Wunused-value]
+ 2079 |         STBIR__DEBUG_ASSERT(in_last_scanline - in_first_scanline <= stbir_info->vertical_filter_pixel_width);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:2171:25: warning: expression result unused [-Wunused-value]
+ 2171 |     STBIR__DEBUG_ASSERT(!stbir__use_height_upsampling(stbir_info));
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:2180:68: warning: expression result unused [-Wunused-value]
+ 2180 |         STBIR__DEBUG_ASSERT(out_last_scanline - out_first_scanline <= stbir_info->vertical_filter_pixel_width);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:2382:92: warning: expression result unused [-Wunused-value]
+ 2382 |         STBIR__DEBUG_ASSERT((size_t)STBIR__NEXT_MEMPTR(info->encode_buffer, unsigned char) == (size_t)tempmem + tempmem_size_in_bytes);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/thirdparty/stb/stb_image_resize.h:2390:90: warning: expression result unused [-Wunused-value]
+ 2390 |         STBIR__DEBUG_ASSERT((size_t)STBIR__NEXT_MEMPTR(info->ring_buffer, unsigned char) == (size_t)tempmem + tempmem_size_in_bytes);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+35 warnings generated.
+[22/32] Building CXX object CMakeFiles/trellis_core.dir/src/quad_refinement_gates.cpp.o
+[23/32] Building CXX object CMakeFiles/trellis_core.dir/src/quad_refinement_io.cpp.o
+[24/32] Building CXX object CMakeFiles/trellis_core.dir/src/quad_components.cpp.o
+[25/32] Building CXX object CMakeFiles/trellis_core.dir/src/deform_conv_cpu.cpp.o
+[26/32] Building CXX object CMakeFiles/trellis_core.dir/src/quad_component_cover.cpp.o
+[27/32] Building CXX object CMakeFiles/trellis_core.dir/src/quad_refinement.cpp.o
+[28/32] Building CXX object CMakeFiles/trellis_core.dir/src/quad_topology.cpp.o
+[29/32] Building CXX object CMakeFiles/trellis_core.dir/thirdparty/xatlas/xatlas.cpp.o
+[30/32] Building CXX object CMakeFiles/trellis_core.dir/src/uv_bake.cpp.o
+[31/32] Linking CXX static library libtrellis_core.a
+[32/32] Linking CXX executable trellis-cli
