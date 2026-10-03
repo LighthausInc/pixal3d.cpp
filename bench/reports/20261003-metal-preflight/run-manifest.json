@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "run_id": "20261003-metal-preflight-v2",
+  "run_id": "20261003-metal-preflight-final",
   "matrix_sha256": "5577d807a9d2eeb572213e243a5367a42699bb2e756f10a451326b112b434171",
   "machine": {
     "os": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
@@ -18,6 +18,254 @@
     "steps": 12,
     "atlas": 2048,
     "timeout_seconds": 7200
+  },
+  "inputs": {
+    "monitor": {
+      "provenance": {
+        "schema_version": 1,
+        "asset": "monitor",
+        "source": "Lighthaus own procedural schematic, prepare_inputs.py",
+        "licence": "Lighthaus internal evaluation; original schematic geometry; storyboard ownership as provided by David",
+        "source_script_sha256": "2aaff9fda125ea5f9d946064940da8bfcf7702510ae3a3ecfaec7b60165bfe76",
+        "storyboards": [
+          {
+            "url": "https://github.com/LighthausInc/mfm-quest/blob/c3ab9f070aea30884d51934893b3b3317c0c44ec/docs/storyboards/iut-panel-04-safe-path-with-ultrasound.jpg",
+            "sha256": "8c36b27e8a13c8106da1da204f7ed470f5dbfcdbde3815dee3a083a3579179d2",
+            "use": "Visual design guidance only; no panel pixels in generation inputs."
+          },
+          {
+            "url": "https://github.com/LighthausInc/mfm-quest/blob/c3ab9f070aea30884d51934893b3b3317c0c44ec/docs/storyboards/amnio-panel-04-planning-an-infusion.jpg",
+            "sha256": "85a6b727803b0796267c30fdc3b4cb60e1d61c11a793a74f8bfe75bd029d07cf",
+            "use": "Visual design guidance only; no panel pixels in generation inputs."
+          }
+        ],
+        "reference_status": "Schematic trial reference; not clinical/medical accuracy evidence; approve before drawing product conclusions.",
+        "no_patient_or_clinical_images": true,
+        "camera": {
+          "fov_degrees": 20,
+          "distance": 3.119,
+          "height": 0,
+          "normalized_max_dimension": 1
+        },
+        "probe_cable": "excluded",
+        "images": {
+          "left.png": "c7d5e4effcc7e3522efb1a26e4014c660deaeb93be355587552d630539b12d3f",
+          "back.png": "1a41a9a7dafc5d08d90515650634fe8d8807ad7ec8a3b80d0508838e3dea03d7",
+          "right.png": "a2109cff9e5083d908bce0179e7052f797603eda6cb74efc53bea198ddea37fe",
+          "front.png": "927b321e17d806d748d07a47e21e50191f46ee39c611a332f21a72f73d0b2324"
+        }
+      },
+      "files": {
+        "front.png": "927b321e17d806d748d07a47e21e50191f46ee39c611a332f21a72f73d0b2324",
+        "back.png": "1a41a9a7dafc5d08d90515650634fe8d8807ad7ec8a3b80d0508838e3dea03d7",
+        "left.png": "c7d5e4effcc7e3522efb1a26e4014c660deaeb93be355587552d630539b12d3f",
+        "right.png": "a2109cff9e5083d908bce0179e7052f797603eda6cb74efc53bea198ddea37fe",
+        "transforms.json": "b5b68fc16dd7c47ef02cf966e77035242be45ca9596b6085872d2dae25b19c65"
+      }
+    },
+    "probe": {
+      "provenance": {
+        "schema_version": 1,
+        "asset": "probe",
+        "source": "Lighthaus own procedural schematic, prepare_inputs.py",
+        "licence": "Lighthaus internal evaluation; original schematic geometry; storyboard ownership as provided by David",
+        "source_script_sha256": "2aaff9fda125ea5f9d946064940da8bfcf7702510ae3a3ecfaec7b60165bfe76",
+        "storyboards": [
+          {
+            "url": "https://github.com/LighthausInc/mfm-quest/blob/c3ab9f070aea30884d51934893b3b3317c0c44ec/docs/storyboards/iut-panel-04-safe-path-with-ultrasound.jpg",
+            "sha256": "8c36b27e8a13c8106da1da204f7ed470f5dbfcdbde3815dee3a083a3579179d2",
+            "use": "Visual design guidance only; no panel pixels in generation inputs."
+          },
+          {
+            "url": "https://github.com/LighthausInc/mfm-quest/blob/c3ab9f070aea30884d51934893b3b3317c0c44ec/docs/storyboards/amnio-panel-04-planning-an-infusion.jpg",
+            "sha256": "85a6b727803b0796267c30fdc3b4cb60e1d61c11a793a74f8bfe75bd029d07cf",
+            "use": "Visual design guidance only; no panel pixels in generation inputs."
+          }
+        ],
+        "reference_status": "Schematic trial reference; not clinical/medical accuracy evidence; approve before drawing product conclusions.",
+        "no_patient_or_clinical_images": true,
+        "camera": {
+          "fov_degrees": 20,
+          "distance": 3.119,
+          "height": 0,
+          "normalized_max_dimension": 1
+        },
+        "probe_cable": "excluded",
+        "images": {
+          "left.png": "cd5e819912fd899591fd6f5a3380365202673f373f131121b20b71c78672c280",
+          "back.png": "44f9665c99cb58d7deb7bcca4a500f75e680f8e997844619c8fc1b897388071f",
+          "right.png": "5637550b1bf4b6fdf7ec4bc8bbecfe434b7c193e730ed4cc038660ff3687b672",
+          "front.png": "62312e4f630fd312784ee16d6c30eb3b2559e00d508641dfa6fb358032e8874b"
+        }
+      },
+      "files": {
+        "front.png": "62312e4f630fd312784ee16d6c30eb3b2559e00d508641dfa6fb358032e8874b",
+        "back.png": "44f9665c99cb58d7deb7bcca4a500f75e680f8e997844619c8fc1b897388071f",
+        "left.png": "cd5e819912fd899591fd6f5a3380365202673f373f131121b20b71c78672c280",
+        "right.png": "5637550b1bf4b6fdf7ec4bc8bbecfe434b7c193e730ed4cc038660ff3687b672",
+        "transforms.json": "b5b68fc16dd7c47ef02cf966e77035242be45ca9596b6085872d2dae25b19c65"
+      }
+    },
+    "laryngoscope": {
+      "provenance": {
+        "schema_version": 1,
+        "asset": "laryngoscope",
+        "source": "Lighthaus own procedural schematic, prepare_inputs.py",
+        "licence": "Lighthaus internal evaluation; original schematic geometry; storyboard ownership as provided by David",
+        "source_script_sha256": "2aaff9fda125ea5f9d946064940da8bfcf7702510ae3a3ecfaec7b60165bfe76",
+        "storyboards": [
+          {
+            "url": "https://github.com/LighthausInc/mfm-quest/blob/c3ab9f070aea30884d51934893b3b3317c0c44ec/docs/storyboards/panel-10-reveal-vocal-cords.png",
+            "sha256": "320eb2c647ffb178a877b5840b937dd83f4b0cda3ff2c576a40251b9aa17373e",
+            "use": "Visual design guidance only; no panel pixels in generation inputs."
+          },
+          {
+            "url": "https://github.com/LighthausInc/mfm-quest/blob/c3ab9f070aea30884d51934893b3b3317c0c44ec/docs/storyboards/panel-11-place-breathing-tube.png",
+            "sha256": "f3af4be256d6e7db476b57fd0765670909bd646cadc17ea7ca20a81c61fce4b5",
+            "use": "Adjacent airway context: panel-11 depicts ET tube, not laryngoscope. No panel pixels in generation inputs."
+          }
+        ],
+        "reference_status": "Schematic trial reference; not clinical/medical accuracy evidence; approve before drawing product conclusions.",
+        "no_patient_or_clinical_images": true,
+        "camera": {
+          "fov_degrees": 20,
+          "distance": 3.119,
+          "height": 0,
+          "normalized_max_dimension": 1
+        },
+        "probe_cable": "excluded",
+        "images": {
+          "left.png": "893cfbf2cfe5832ff96da566869cc41d69f7bb1f24704e598da2a8d084a90186",
+          "back.png": "0863bb9e925e316f6c67a6d39565a39f27119a0f5467b8f7af74f88d1c395805",
+          "right.png": "39ab9b55cac5ed8cc787261728d3fc08f2b6e53e6eb44417569363bff894aa69",
+          "front.png": "776bae133ec953f34efc51d2ba43b93ce4a61ec04369cbd7ba67cda40fd7b163"
+        }
+      },
+      "files": {
+        "front.png": "776bae133ec953f34efc51d2ba43b93ce4a61ec04369cbd7ba67cda40fd7b163",
+        "back.png": "0863bb9e925e316f6c67a6d39565a39f27119a0f5467b8f7af74f88d1c395805",
+        "left.png": "893cfbf2cfe5832ff96da566869cc41d69f7bb1f24704e598da2a8d084a90186",
+        "right.png": "39ab9b55cac5ed8cc787261728d3fc08f2b6e53e6eb44417569363bff894aa69",
+        "transforms.json": "b5b68fc16dd7c47ef02cf966e77035242be45ca9596b6085872d2dae25b19c65"
+      }
+    }
+  },
+  "configured_hosts": {
+    "metal": {
+      "backend": "Metal",
+      "platform": "Darwin",
+      "machine": "Apple M1 Max / 64 GB unified / 32 GPU cores",
+      "engines": {
+        "pixal": {
+          "repo": "..",
+          "binary": "../build/trellis-cli",
+          "evidence": "evidence/pixal-metal-build.json"
+        },
+        "trellis": {
+          "repo": "../../trellis.cpp",
+          "binary": "../../trellis.cpp/build/trellis-cli",
+          "evidence": "evidence/trellis-metal-build.json"
+        }
+      }
+    },
+    "rtx-cuda": {
+      "backend": "CUDA",
+      "platform": "Windows",
+      "blocked": "RTX host/access not provided.",
+      "engines": {}
+    },
+    "rtx-vulkan": {
+      "backend": "Vulkan",
+      "platform": "Windows",
+      "blocked": "Same RTX host/access and Vulkan source build not provided.",
+      "engines": {}
+    },
+    "cloud-gpu": {
+      "backend": "CUDA",
+      "platform": "Linux",
+      "blocked": "L4/A100 host and hourly cost not provided.",
+      "hourly_usd": null,
+      "engines": {}
+    }
+  },
+  "models": {
+    "pixal-mv-q8": {
+      "engine": "pixal",
+      "mode": "mv",
+      "quant": "q8_0",
+      "manifest": "../models/pixal3d-q8_0-v1/pixal3d-models.json",
+      "hf_repo": "raven38/pixal3d-q8_0-v1",
+      "hf_revision": null,
+      "weights": "weights/pixal-mv-q8"
+    },
+    "pixal-mv-f16": {
+      "engine": "pixal",
+      "mode": "mv",
+      "quant": "f16",
+      "manifest": "../models/pixal3d-f16-v1/pixal3d-models.json",
+      "hf_repo": "raven38/pixal3d-f16-v1",
+      "hf_revision": null,
+      "weights": "weights/pixal-mv-f16"
+    },
+    "pixal-sv-q8": {
+      "engine": "pixal",
+      "mode": "sv",
+      "quant": "q8_0",
+      "manifest": "../models/pixal3d-sv-q8_0-v1/pixal3d-models.json",
+      "hf_repo": "raven38/pixal3d-sv-q8_0-v1",
+      "hf_revision": null,
+      "weights": "weights/pixal-sv-q8"
+    },
+    "pixal-sv-f16": {
+      "engine": "pixal",
+      "mode": "sv",
+      "quant": "f16",
+      "manifest": null,
+      "hf_repo": null,
+      "hf_revision": null,
+      "weights": "weights/pixal-sv-f16",
+      "blocked": "No pinned SV f16 manifest in baseline; no conversion or untrusted substitution."
+    },
+    "trellis2-q8": {
+      "engine": "trellis",
+      "mode": "trellis",
+      "quant": "q8_0",
+      "manifest": null,
+      "hf_repo": "ilintar/trellis2-gguf",
+      "hf_revision": null,
+      "weights": "weights/trellis2-q8",
+      "blocked": "No trusted SHA-256 model manifest supplied for TRELLIS.2."
+    },
+    "trellis2-f16": {
+      "engine": "trellis",
+      "mode": "trellis",
+      "quant": "f16",
+      "manifest": null,
+      "hf_repo": "ilintar/trellis2-gguf",
+      "hf_revision": null,
+      "weights": "weights/trellis2-f16",
+      "blocked": "No trusted SHA-256 model manifest supplied for TRELLIS.2."
+    },
+    "trellis-pixal-sv-q8": {
+      "engine": "trellis",
+      "mode": "pixal",
+      "quant": "q8_0",
+      "manifest": null,
+      "hf_repo": null,
+      "hf_revision": null,
+      "weights": "weights/trellis-pixal-sv-q8",
+      "blocked": "Upstream names/conversion differ; vegax87/Pixal3D is outside the approved weight sources. Requires audited compatible pinned manifest."
+    },
+    "trellis-pixal-sv-f16": {
+      "engine": "trellis",
+      "mode": "pixal",
+      "quant": "f16",
+      "manifest": null,
+      "hf_repo": null,
+      "hf_revision": null,
+      "weights": "weights/trellis-pixal-sv-f16",
+      "blocked": "Requires audited compatible pinned manifest from allowed weight sources."
+    }
   },
   "human_ratings": "pending",
   "shipping_approved": false,

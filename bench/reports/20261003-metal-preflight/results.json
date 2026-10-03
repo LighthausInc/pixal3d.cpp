@@ -8,7 +8,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -47,7 +47,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -80,7 +80,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -113,7 +113,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -146,7 +146,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -185,7 +185,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -218,7 +218,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -251,7 +251,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -284,7 +284,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -323,7 +323,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -356,7 +356,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -389,7 +389,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -1760,7 +1760,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -1799,7 +1799,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -1832,7 +1832,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -1865,7 +1865,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -1898,7 +1898,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -1937,7 +1937,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -1970,7 +1970,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -2003,7 +2003,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -2036,7 +2036,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -2075,7 +2075,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -2108,7 +2108,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -2141,7 +2141,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -3512,7 +3512,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -3551,7 +3551,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -3584,7 +3584,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -3617,7 +3617,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -3650,7 +3650,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -3689,7 +3689,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -3722,7 +3722,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -3755,7 +3755,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -3788,7 +3788,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -3827,7 +3827,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -3860,7 +3860,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -3893,7 +3893,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -5264,7 +5264,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -5303,7 +5303,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -5336,7 +5336,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -5369,7 +5369,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -5402,7 +5402,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -5441,7 +5441,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -5474,7 +5474,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -5507,7 +5507,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -5540,7 +5540,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -5579,7 +5579,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -5612,7 +5612,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -5645,7 +5645,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -8990,7 +8990,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -9029,7 +9029,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -9062,7 +9062,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -9095,7 +9095,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -9128,7 +9128,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -9167,7 +9167,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -9200,7 +9200,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -9233,7 +9233,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -9266,7 +9266,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -9305,7 +9305,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -9338,7 +9338,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -9371,7 +9371,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -10232,7 +10232,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -10271,7 +10271,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -10304,7 +10304,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -10337,7 +10337,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -10370,7 +10370,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -10409,7 +10409,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -10442,7 +10442,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -10475,7 +10475,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -10508,7 +10508,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -10547,7 +10547,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -10580,7 +10580,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -10613,7 +10613,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -11474,7 +11474,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -11513,7 +11513,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -11546,7 +11546,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -11579,7 +11579,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -11612,7 +11612,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -11651,7 +11651,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -11684,7 +11684,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -11717,7 +11717,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -11750,7 +11750,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -11789,7 +11789,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -11822,7 +11822,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -11855,7 +11855,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -13226,7 +13226,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -13265,7 +13265,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -13298,7 +13298,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -13331,7 +13331,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -13364,7 +13364,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -13403,7 +13403,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -13436,7 +13436,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -13469,7 +13469,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -13502,7 +13502,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -13541,7 +13541,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -13574,7 +13574,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -13607,7 +13607,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -14978,7 +14978,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -15017,7 +15017,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -15050,7 +15050,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -15083,7 +15083,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -15116,7 +15116,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -15155,7 +15155,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -15188,7 +15188,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -15221,7 +15221,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -15254,7 +15254,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -15293,7 +15293,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -15326,7 +15326,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -15359,7 +15359,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -16730,7 +16730,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -16769,7 +16769,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -16802,7 +16802,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -16835,7 +16835,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -16868,7 +16868,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -16907,7 +16907,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -16940,7 +16940,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -16973,7 +16973,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -17006,7 +17006,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -17045,7 +17045,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -17078,7 +17078,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -17111,7 +17111,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -20456,7 +20456,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -20495,7 +20495,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -20528,7 +20528,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -20561,7 +20561,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -20594,7 +20594,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -20633,7 +20633,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -20666,7 +20666,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -20699,7 +20699,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -20732,7 +20732,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -20771,7 +20771,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -20804,7 +20804,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -20837,7 +20837,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -21698,7 +21698,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -21737,7 +21737,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -21770,7 +21770,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -21803,7 +21803,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -21836,7 +21836,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -21875,7 +21875,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -21908,7 +21908,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -21941,7 +21941,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -21974,7 +21974,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -22013,7 +22013,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -22046,7 +22046,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -22079,7 +22079,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -22940,7 +22940,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -22979,7 +22979,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -23012,7 +23012,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -23045,7 +23045,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -23078,7 +23078,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -23117,7 +23117,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -23150,7 +23150,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -23183,7 +23183,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -23216,7 +23216,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -23255,7 +23255,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -23288,7 +23288,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -23321,7 +23321,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -24692,7 +24692,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -24731,7 +24731,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -24764,7 +24764,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -24797,7 +24797,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -24830,7 +24830,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -24869,7 +24869,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -24902,7 +24902,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -24935,7 +24935,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -24968,7 +24968,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -25007,7 +25007,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -25040,7 +25040,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -25073,7 +25073,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -26444,7 +26444,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -26483,7 +26483,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -26516,7 +26516,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -26549,7 +26549,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -26582,7 +26582,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -26621,7 +26621,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -26654,7 +26654,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -26687,7 +26687,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -26720,7 +26720,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -26759,7 +26759,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -26792,7 +26792,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -26825,7 +26825,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -28196,7 +28196,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -28235,7 +28235,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -28268,7 +28268,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -28301,7 +28301,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -28334,7 +28334,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -28373,7 +28373,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -28406,7 +28406,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -28439,7 +28439,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -28472,7 +28472,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -28511,7 +28511,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -28544,7 +28544,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -28577,7 +28577,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -31922,7 +31922,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -31961,7 +31961,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -31994,7 +31994,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -32027,7 +32027,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -32060,7 +32060,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -32099,7 +32099,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -32132,7 +32132,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -32165,7 +32165,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -32198,7 +32198,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -32237,7 +32237,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -32270,7 +32270,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -32303,7 +32303,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -33164,7 +33164,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -33203,7 +33203,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -33236,7 +33236,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -33269,7 +33269,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -33302,7 +33302,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -33341,7 +33341,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -33374,7 +33374,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -33407,7 +33407,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -33440,7 +33440,7 @@
     "host": "metal",
     "backend": "Metal",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -33479,7 +33479,7 @@
     "host": "rtx-cuda",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -33512,7 +33512,7 @@
     "host": "rtx-vulkan",
     "backend": "Vulkan",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,
@@ -33545,7 +33545,7 @@
     "host": "cloud-gpu",
     "backend": "CUDA",
     "status": "blocked",
-    "reason": "unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)",
+    "reason": "non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)",
     "settings": {
       "steps": 12,
       "atlas": 2048,

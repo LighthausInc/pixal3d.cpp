@@ -14,8 +14,8 @@ python bench/run.py --matrix bench/matrix.yaml --host metal --execute
 
 This expands 864 local cells (8 model variants × 3 assets × 3 resolutions ×
 3 seeds × 4 host slots), plus 27 requested Rodin placeholders. Two extra upstream
-Pixal SV arms preserve the same-model comparison required by #1. Requested 512 Pixal
-texture runs are recorded as unsupported. Rodin resolutions are not equivalent to
+Pixal SV arms preserve the same-model comparison required by #1. Baseline 512 Pixal runs are unsupported; upstream 512 Pixal exports only geometry
+and is recorded as non-comparable for this textured-asset benchmark. Rodin resolutions are not equivalent to
 local voxel grids and its adapter is disabled. No paid calls occur.
 
 Prerequisites: Python + `pip install -r bench/requirements.txt`, installed Blender,

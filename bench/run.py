@@ -125,7 +125,7 @@ def main():
     prior=out/'run-manifest.json'
     if prior.exists() and json.loads(prior.read_text())['matrix_sha256']!=sha(cfgpath): p.error('Matrix changed: use a new run-id to preserve provenance')
     out.mkdir(parents=True,exist_ok=True); machine={'os':platform.platform(),'architecture':platform.machine(),'cpu_count':os.cpu_count(),'physical_memory_bytes':psutil.virtual_memory().total,'host':a.host}; rows=[]; cache={}
-    dump(out/'run-manifest.json',{'schema_version':1,'run_id':runid,'matrix_sha256':sha(cfgpath),'machine':machine,'commits':{k:cfg[k] for k in ['baseline','trellis_commit','storyboard_commit']},'settings':cfg['settings'],'human_ratings':'pending','shipping_approved':False,'execution_requested':a.execute,'measurement_status':'No quality recommendation until outputs and human ratings exist.'})
+    dump(out/'run-manifest.json',{'schema_version':1,'run_id':runid,'matrix_sha256':sha(cfgpath),'machine':machine,'commits':{k:cfg[k] for k in ['baseline','trellis_commit','storyboard_commit']},'settings':cfg['settings'],'inputs':{k:verified_input(v) for k,v in cfg['assets'].items()},'configured_hosts':cfg['hosts'],'models':cfg['models'],'human_ratings':'pending','shipping_approved':False,'execution_requested':a.execute,'measurement_status':'No quality recommendation until outputs and human ratings exist.'})
     shutil.copyfile(cfgpath,out/'matrix.yaml')
     cells=itertools.product(cfg['assets'],cfg['models'],cfg['resolutions'],cfg['seeds'],cfg['hosts'])
     for assetid,modelid,res,seed,hostid in cells:
@@ -135,9 +135,12 @@ def main():
         asset=cfg['assets'][assetid]; model=cfg['models'][modelid]; host=cfg['hosts'][hostid]
         row={'id':cell,'asset':assetid,'model':modelid,'resolution':res,'seed':seed,'host':hostid,'backend':host['backend'],'status':'blocked','reason':None,'settings':dict(cfg['settings'],native_postprocess='engine defaults; Pixal MV raw export default 1M, TRELLIS default 300k at 1024; common atlas 2048'),'machine':machine if hostid==a.host else None,'source_commit':cfg['baseline'] if model['engine']=='pixal' else cfg['trellis_commit'],'tri_budget':asset['tri_budget'],'nominal_height_m':asset['nominal_height_m'],'human_rating':None,'metrics':None,'measurement':None,'similarity':{'status':'blocked','reason':'CLIP/DINO evaluation encoder snapshots and trusted hashes not provided; no unapproved weights loaded.'},'cost':{'usd':None,'credits':0,'method':'No execution'}}
         reason=None
-        if model['mode'] in ('sv','mv','pixal') and res==512: reason='unsupported: Pixal3D has no 512 texture flow (baseline rejects this resolution)'
+        if model['engine']=='pixal' and res==512: reason='unsupported: baseline Pixal3D rejects 512 (no 512 texture flow)'
+        elif model['mode']=='pixal' and res==512: reason='non-comparable: upstream Pixal3D 512 exports geometry only (no 512 texture flow)'
         elif host.get('blocked'): reason=host['blocked']
         elif hostid!=a.host: reason='Not executed on this host; select actual provisioned host'
+        elif host['platform']!=platform.system(): reason='Configured host platform differs from actual execution machine'
+        elif hostid=='cloud-gpu' and host.get('hourly_usd') is None: reason='Cloud hourly rate not recorded'
         elif a.asset and assetid!=a.asset or a.model and modelid!=a.model: reason='Outside selected execution subset'
         elif model.get('blocked'): reason=model['blocked']
         else:
