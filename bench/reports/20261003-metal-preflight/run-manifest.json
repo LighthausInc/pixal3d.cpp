@@ -1,7 +1,18 @@
 {
   "schema_version": 1,
-  "run_id": "20261003-metal-preflight-final",
-  "matrix_sha256": "5577d807a9d2eeb572213e243a5367a42699bb2e756f10a451326b112b434171",
+  "run_id": "20261003-metal-published",
+  "matrix_sha256": "652c3a43c689757fad15c6f1d82b29863b79b66fc337c14a256b81c1639f5214",
+  "harness_sha256": {
+    "build.py": "c99a436040238f07a35a3d73e1060d88e227c38623e15ff119e410836e4a5fc0",
+    "run.py": "2c5afd3f43bde5f8dda682036b8de887d1970d1d3b5d7bf5d3d3ab9e8e942959",
+    "prepare_inputs.py": "2aaff9fda125ea5f9d946064940da8bfcf7702510ae3a3ecfaec7b60165bfe76",
+    "similarity.py": "839cee739e98af5ab020fd4879cf274b400505f53450efd66588cf7dfd7f5f59",
+    "audit_weights.py": "6d99442ceba32b211f4dc08611275fd9c82e9f0e5b07d5749142cea51a843740",
+    "recommend.py": "658701a9aa79a525f6c72df2c5bcc725cd81fa274a4f837b04d8b09062447953",
+    "blender_pass.py": "7f1973288f066cfa9821935726c3836e0c46667d0b72844829511a4c473e9098",
+    "report.py": "2a8bbc9c2e5321f185dba10c14e1fe381be5d84e2d06962cb42c7e089514e958"
+  },
+  "harness_commit": "74e1492b287db5eb04d32995b2d5a975d347768f",
   "machine": {
     "os": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
     "architecture": "arm64",
@@ -157,8 +168,8 @@
       "machine": "Apple M1 Max / 64 GB unified / 32 GPU cores",
       "engines": {
         "pixal": {
-          "repo": "..",
-          "binary": "../build/trellis-cli",
+          "repo": "../../pixal3d-baseline",
+          "binary": "../../pixal3d-baseline/build/trellis-cli",
           "evidence": "evidence/pixal-metal-build.json"
         },
         "trellis": {
@@ -193,7 +204,7 @@
       "engine": "pixal",
       "mode": "mv",
       "quant": "q8_0",
-      "manifest": "../models/pixal3d-q8_0-v1/pixal3d-models.json",
+      "manifest": "../../pixal3d-baseline/models/pixal3d-q8_0-v1/pixal3d-models.json",
       "hf_repo": "raven38/pixal3d-q8_0-v1",
       "hf_revision": null,
       "weights": "weights/pixal-mv-q8"
@@ -202,7 +213,7 @@
       "engine": "pixal",
       "mode": "mv",
       "quant": "f16",
-      "manifest": "../models/pixal3d-f16-v1/pixal3d-models.json",
+      "manifest": "../../pixal3d-baseline/models/pixal3d-f16-v1/pixal3d-models.json",
       "hf_repo": "raven38/pixal3d-f16-v1",
       "hf_revision": null,
       "weights": "weights/pixal-mv-f16"
@@ -211,7 +222,7 @@
       "engine": "pixal",
       "mode": "sv",
       "quant": "q8_0",
-      "manifest": "../models/pixal3d-sv-q8_0-v1/pixal3d-models.json",
+      "manifest": "../../pixal3d-baseline/models/pixal3d-sv-q8_0-v1/pixal3d-models.json",
       "hf_repo": "raven38/pixal3d-sv-q8_0-v1",
       "hf_revision": null,
       "weights": "weights/pixal-sv-q8"

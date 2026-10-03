@@ -110,6 +110,13 @@ def command(model,host,asset,res,seed,out):
         if model['mode']=='pixal': c+=['--fov','20'] # upstream degrees; baseline radians
     return c+['--models',str(resolve(model['weights'])),'--res',str(res),'--seed',str(seed),'--atlas','2048','--require-gpu',str(out/'raw.glb')]
 
+def common_inputs(assets):
+    results={}
+    for name,asset in assets.items():
+        try: results[name]=verified_input(asset)
+        except Exception as e: results[name]={'status':'invalid','error':str(e)}
+    return results
+
 def report(out,config):
     subprocess.run([os.sys.executable,str(B/'report.py'),str(out),str(config)],check=True)
 
@@ -125,13 +132,15 @@ def main():
     prior=out/'run-manifest.json'
     if prior.exists() and json.loads(prior.read_text())['matrix_sha256']!=sha(cfgpath): p.error('Matrix changed: use a new run-id to preserve provenance')
     out.mkdir(parents=True,exist_ok=True); machine={'os':platform.platform(),'architecture':platform.machine(),'cpu_count':os.cpu_count(),'physical_memory_bytes':psutil.virtual_memory().total,'host':a.host}; rows=[]; cache={}
-    dump(out/'run-manifest.json',{'schema_version':1,'run_id':runid,'matrix_sha256':sha(cfgpath),'machine':machine,'commits':{k:cfg[k] for k in ['baseline','trellis_commit','storyboard_commit']},'settings':cfg['settings'],'inputs':{k:verified_input(v) for k,v in cfg['assets'].items()},'configured_hosts':cfg['hosts'],'models':cfg['models'],'human_ratings':'pending','shipping_approved':False,'execution_requested':a.execute,'measurement_status':'No quality recommendation until outputs and human ratings exist.'})
+    dump(out/'run-manifest.json',{'schema_version':1,'run_id':runid,'matrix_sha256':sha(cfgpath),'harness_sha256':{f.name:sha(f) for f in B.glob('*.py')},'harness_commit':subprocess.check_output(['git','-C',str(B.parent),'rev-parse','HEAD'],text=True).strip(),'machine':machine,'commits':{k:cfg[k] for k in ['baseline','trellis_commit','storyboard_commit']},'settings':cfg['settings'],'inputs':common_inputs(cfg['assets']),'configured_hosts':cfg['hosts'],'models':cfg['models'],'human_ratings':'pending','shipping_approved':False,'execution_requested':a.execute,'measurement_status':'No quality recommendation until outputs and human ratings exist.'})
     shutil.copyfile(cfgpath,out/'matrix.yaml')
     cells=itertools.product(cfg['assets'],cfg['models'],cfg['resolutions'],cfg['seeds'],cfg['hosts'])
     for assetid,modelid,res,seed,hostid in cells:
         cell=f'{assetid}_{modelid}_{res}_{seed}_{hostid}'; dest=out/cell; path=dest/'manifest.json'
-        if path.exists() and not a.retry_blocked:
-            rows.append(json.loads(path.read_text())); continue
+        if path.exists():
+            prior_row=json.loads(path.read_text())
+            if not a.retry_blocked or prior_row['status']!='blocked':
+                rows.append(prior_row); continue
         asset=cfg['assets'][assetid]; model=cfg['models'][modelid]; host=cfg['hosts'][hostid]
         row={'id':cell,'asset':assetid,'model':modelid,'resolution':res,'seed':seed,'host':hostid,'backend':host['backend'],'status':'blocked','reason':None,'settings':dict(cfg['settings'],native_postprocess='engine defaults; Pixal MV raw export default 1M, TRELLIS default 300k at 1024; common atlas 2048'),'machine':machine if hostid==a.host else None,'source_commit':cfg['baseline'] if model['engine']=='pixal' else cfg['trellis_commit'],'tri_budget':asset['tri_budget'],'nominal_height_m':asset['nominal_height_m'],'human_rating':None,'metrics':None,'measurement':None,'similarity':{'status':'blocked','reason':'CLIP/DINO evaluation encoder snapshots and trusted hashes not provided; no unapproved weights loaded.'},'cost':{'usd':None,'credits':0,'method':'No execution'}}
         reason=None

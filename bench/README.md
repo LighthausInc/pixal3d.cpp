@@ -29,13 +29,14 @@ outputs must be archived with their manifests before deleting local results.
 
 ## Source builds
 
-Clone `LighthausInc/pixal3d.cpp` at `1f432fd3f0689c504fa1e9b15b038c33584174d1`,
+Keep the harness branch on the fork’s main; clone `LighthausInc/pixal3d.cpp` into a
+separate `../pixal3d-baseline` at `1f432fd3f0689c504fa1e9b15b038c33584174d1`,
 `LighthausInc/trellis.cpp` at current-main snapshot
 `c0bed38c1578f7e36e3e50c8ff1e38fa0d47583f`; `git submodule update --init --recursive`.
 The harness branch changes only `bench/`. Do not run installers or use project releases.
 
 ```sh
-python bench/build.py --repo . --engine pixal --backend Metal
+python bench/build.py --repo ../pixal3d-baseline --engine pixal --backend Metal
 python bench/build.py --repo ../trellis.cpp --engine trellis --backend Metal
 ```
 
@@ -47,7 +48,7 @@ Windows: VS 2022 x64 Native Tools prompt, CMake, Ninja, NVIDIA driver R590+,
 CUDA Toolkit 13.1. CUDA helper enforces the driver/toolkit floor and x64 prompt.
 
 ```sh
-python bench/build.py --repo . --engine pixal --backend CUDA --arch 89
+python bench/build.py --repo ../pixal3d-baseline --engine pixal --backend CUDA --arch 89
 python bench/build.py --repo ../trellis.cpp --engine trellis --backend CUDA --arch 89
 ```
 
@@ -73,9 +74,9 @@ Inspect the pinned model manifest, download only its listed files into the separ
 
 ```sh
 shasum -a 256 bench/weights/pixal-sv-q8/*.gguf
-python bench/audit_weights.py --manifest models/pixal3d-sv-q8_0-v1/pixal3d-models.json --weights bench/weights/pixal-sv-q8
+python bench/audit_weights.py --manifest ../pixal3d-baseline/models/pixal3d-sv-q8_0-v1/pixal3d-models.json --weights bench/weights/pixal-sv-q8
 # AFTER comparing every printed actual hash to the checked-in expected hash:
-python bench/audit_weights.py --manifest models/pixal3d-sv-q8_0-v1/pixal3d-models.json --weights bench/weights/pixal-sv-q8 --reviewer 'David / evaluation' --confirm-compared
+python bench/audit_weights.py --manifest ../pixal3d-baseline/models/pixal3d-sv-q8_0-v1/pixal3d-models.json --weights bench/weights/pixal-sv-q8 --reviewer 'David / evaluation' --confirm-compared
 ```
 
 Runner rehashes bytes and rejects extra GGUFs, missing/stale manual receipts, unsafe
@@ -139,14 +140,16 @@ python bench/recommend.py --run bench/results/<run-id> --ratings /path/to/<run-i
 ```
 
 Three rated, completed, in-budget seeds are required per configuration. Defaults are
-provisional (highest mean rating, fastest tie-break). Base decision stays pending
-same-host SV comparisons, measured MV gains and an engineering port-cost estimate.
+provisional (highest mean rating, fastest tie-break). Base decision needs same-host MV/SV comparisons on both trees. The explicit
+judgment threshold is 0.5 mean rating points by default (`--minimum-meaningful-gain`);
+provide `--port-estimate-days` for #1’s two-workweek cost condition. Without the
+engineering estimate, a decisive MV gain gives a conditional recommendation.
 Facts versus impressions are labelled; incomplete cells do not rank.
 
 ## Validation performed
 
 - Both source-pinned Metal trellis-cli builds succeeded, WEBP OFF.
-- Five safety tests cover forbidden/mutable sources, corrupt hashes/path traversal,
+- Six contract tests cover forbidden/mutable sources, corrupt hashes/path traversal,
   CLI-only commands and valid camera/input provenance.
 - Own procedural monitor fixture: independent headless import, metrics, decimation
   to a stricter 1k test budget, GLB export and 16 renders. Fixture is harness evidence,
