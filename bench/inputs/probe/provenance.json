@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "asset": "probe",
+  "source": "Lighthaus own procedural schematic, prepare_inputs.py",
+  "licence": "Lighthaus internal evaluation; original schematic geometry; storyboard ownership as provided by David",
+  "source_script_sha256": "2aaff9fda125ea5f9d946064940da8bfcf7702510ae3a3ecfaec7b60165bfe76",
+  "storyboards": [
+    {
+      "url": "https://github.com/LighthausInc/mfm-quest/blob/c3ab9f070aea30884d51934893b3b3317c0c44ec/docs/storyboards/iut-panel-04-safe-path-with-ultrasound.jpg",
+      "sha256": "8c36b27e8a13c8106da1da204f7ed470f5dbfcdbde3815dee3a083a3579179d2",
+      "use": "Visual design guidance only; no panel pixels in generation inputs."
+    },
+    {
+      "url": "https://github.com/LighthausInc/mfm-quest/blob/c3ab9f070aea30884d51934893b3b3317c0c44ec/docs/storyboards/amnio-panel-04-planning-an-infusion.jpg",
+      "sha256": "85a6b727803b0796267c30fdc3b4cb60e1d61c11a793a74f8bfe75bd029d07cf",
+      "use": "Visual design guidance only; no panel pixels in generation inputs."
+    }
+  ],
+  "reference_status": "Schematic trial reference; not clinical/medical accuracy evidence; approve before drawing product conclusions.",
+  "no_patient_or_clinical_images": true,
+  "camera": {
+    "fov_degrees": 20,
+    "distance": 3.119,
+    "height": 0,
+    "normalized_max_dimension": 1
+  },
+  "probe_cable": "excluded",
+  "images": {
+    "left.png": "cd5e819912fd899591fd6f5a3380365202673f373f131121b20b71c78672c280",
+    "back.png": "44f9665c99cb58d7deb7bcca4a500f75e680f8e997844619c8fc1b897388071f",
+    "right.png": "5637550b1bf4b6fdf7ec4bc8bbecfe434b7c193e730ed4cc038660ff3687b672",
+    "front.png": "62312e4f630fd312784ee16d6c30eb3b2559e00d508641dfa6fb358032e8874b"
+  }
+}

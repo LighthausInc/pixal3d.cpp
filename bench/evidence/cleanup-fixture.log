@@ -1,0 +1,81 @@
+Error in bpy.app.handlers.load_pre[1]:
+Traceback (most recent call last):
+  File "/Users/davidsarno/Library/Application Support/Blender/5.2/extensions/user_default/auto_rig_pro/src/auto_rig.py", line 46866, in cleanup_line_fx
+    bpy.types.SpaceView3D.draw_handler_remove(handles_lines[0], 'WINDOW')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: callback_remove(handler): null handler given, invalid or already removed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/davidsarno/Library/Application Support/Blender/5.2/extensions/user_default/auto_rig_pro/src/auto_rig.py", line 46870, in cleanup_line_fx
+    if bpy.context.scene.arp_debug_mode:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Scene' object has no attribute 'arp_debug_mode'
+Error in bpy.app.handlers.load_pre[2]:
+Traceback (most recent call last):
+  File "/Users/davidsarno/Library/Application Support/Blender/5.2/extensions/user_default/auto_rig_pro/src/auto_rig_smart.py", line 7531, in cleanup
+    bpy.types.SpaceView3D.draw_handler_remove(handles[0], 'WINDOW')
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+ValueError: callback_remove(handler): null handler given, invalid or already removed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/davidsarno/Library/Application Support/Blender/5.2/extensions/user_default/auto_rig_pro/src/auto_rig_smart.py", line 7535, in cleanup
+    if bpy.context.scene.arp_debug_mode:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Scene' object has no attribute 'arp_debug_mode'
+Reloading external rigs...
+Reloading external metarigs...
+Auto-Rig Pro preferences loaded successfully!
+Update armature presets...
+08:25:05 | INFO: Data are loaded, start creating Blender stuff
+08:25:05 | INFO: Blender create Mesh node Cube
+08:25:05 | INFO: Blender create Mesh node Cube.001
+08:25:05 | INFO: Blender create Mesh node Cube.002
+08:25:05 | INFO: Blender create Mesh node Cylinder
+08:25:05 | INFO: Blender create Mesh node Cylinder.001
+08:25:05 | INFO: Blender create Mesh node Cylinder.002
+08:25:05 | INFO: Blender create Mesh node Cylinder.003
+08:25:05 | INFO: Blender create Mesh node Cube.009
+08:25:05 | INFO: Blender create Mesh node Cube.010
+08:25:05 | INFO: Blender create Mesh node Cube.011
+08:25:05 | INFO: Blender create Mesh node Cube.012
+08:25:05 | INFO: Blender create Mesh node Cube.013
+08:25:05 | INFO: Blender create Mesh node Cube.014
+08:25:05 | INFO: Blender create Mesh node Cube.007
+08:25:05 | INFO: Blender create Mesh node Cube.006
+08:25:05 | INFO: Blender create Mesh node Cube.003
+08:25:05 | INFO: Blender create Mesh node Cube.004
+08:25:05 | INFO: Blender create Mesh node Cube.005
+08:25:05 | INFO: Blender create Mesh node Cube.008
+08:25:05 | INFO: glTF import finished in 0.03s
+/Users/davidsarno/Documents/ChatGPT/3DGen/pixal3d.cpp/bench/blender_pass.py:46: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if m and m.use_nodes:
+00:01.242  render           | Saved: 'bench/evidence/cleanup-fixture/raw/00.png'
+00:01.721  render           | Saved: 'bench/evidence/cleanup-fixture/raw/01.png'
+00:02.236  render           | Saved: 'bench/evidence/cleanup-fixture/raw/02.png'
+00:02.723  render           | Saved: 'bench/evidence/cleanup-fixture/raw/03.png'
+00:03.209  render           | Saved: 'bench/evidence/cleanup-fixture/raw/04.png'
+00:03.730  render           | Saved: 'bench/evidence/cleanup-fixture/raw/05.png'
+00:04.084  render           | Saved: 'bench/evidence/cleanup-fixture/raw/06.png'
+00:04.565  render           | Saved: 'bench/evidence/cleanup-fixture/raw/07.png'
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+08:25:09 | INFO: Starting glTF 2.0 export
+08:25:09 | INFO: Extracting primitive: Cube
+08:25:09 | INFO: Primitives created: 4
+08:25:09 | INFO: Finished glTF 2.0 export in 0.01308894157409668 s
+00:05.101  render           | Saved: 'bench/evidence/cleanup-fixture/cleaned/00.png'
+00:05.575  render           | Saved: 'bench/evidence/cleanup-fixture/cleaned/01.png'
+00:06.053  render           | Saved: 'bench/evidence/cleanup-fixture/cleaned/02.png'
+00:06.533  render           | Saved: 'bench/evidence/cleanup-fixture/cleaned/03.png'
+00:07.031  render           | Saved: 'bench/evidence/cleanup-fixture/cleaned/04.png'
+00:07.535  render           | Saved: 'bench/evidence/cleanup-fixture/cleaned/05.png'
+00:08.044  render           | Saved: 'bench/evidence/cleanup-fixture/cleaned/06.png'
+00:08.549  render           | Saved: 'bench/evidence/cleanup-fixture/cleaned/07.png'
+
+Blender 5.2.0 LTS (hash fbe6228777e7 built 2026-07-14 01:31:22)
+
+Blender quit

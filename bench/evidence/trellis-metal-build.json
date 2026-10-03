@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "repo": "/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp",
+  "engine": "trellis",
+  "backend": "Metal",
+  "commit": "c0bed38c1578f7e36e3e50c8ff1e38fa0d47583f",
+  "source_commit": "c0bed38c1578f7e36e3e50c8ff1e38fa0d47583f",
+  "submodules": "f8697b33795db2ee6a2569b40853ca6aaa69f9b9 thirdparty/ggml (v0.16.0-463-gf8697b33)",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "commands": [
+    [
+      "../.bench-tools/bin/cmake",
+      "-B",
+      "build",
+      "-G",
+      "Ninja",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DTRELLIS_WEBP=OFF",
+      "-DCMAKE_MAKE_PROGRAM=/Users/davidsarno/Documents/ChatGPT/3DGen/.bench-tools/bin/ninja",
+      "-DGGML_CUDA=OFF",
+      "-DGGML_VULKAN=OFF"
+    ],
+    [
+      "../.bench-tools/bin/cmake",
+      "--build",
+      "build",
+      "--target",
+      "trellis-cli",
+      "-j",
+      "8"
+    ]
+  ],
+  "status": "success",
+  "source_only": true,
+  "source_tree_sha256": "46ca502a1674bf2ad6219e89b28b4144c71c090faa9f6a685d136733c3d9add1",
+  "binary": "/Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/build/trellis-cli",
+  "binary_sha256": "b328490ddc09ffb851d51431bdf65b699e91b12501c7ed386440c2fc617479f4",
+  "cmake_cache_sha256": "ed93d0555bdd196a552185da4164bf8e86262b7464de35299e0940b998edc349",
+  "webp_off": true,
+  "help": "usage: /Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/build/trellis-cli <image.png> <out.glb> [options]\n   or: /Users/davidsarno/Documents/ChatGPT/3DGen/trellis.cpp/build/trellis-cli --image <image.png> --output <out.glb> [options]\n\n  -i, --image PATH        input image                  (image->3D)\n  -o, --output PATH       output .glb                  (default model.glb)\n      --copyright TEXT    glTF asset.copyright metadata\n  -m, --models DIR        GGUF model directory\n      --model FAMILY      trellis (default) | pixal3d \u2014 which flow weights the model\n                          directory holds. pixal3d swaps the DINOv3 cross-attention for\n                          view-aligned projection conditioning; the samplers, decoders\n                          and every postprocessing stage are shared.\n      --fov DEG           pixal3d: horizontal field of view of the input image, which\n                          fixes the projection camera (default 49.13, Pixal3D's own).\n                          Upstream estimates this with MoGe-2; that model is not ported,\n                          so a wrong FOV shows up as geometry drifting off the silhouette.\n      --mesh-scale F      pixal3d: object scale inside the unit grid   (default 1.0)\n      --extend-pixel N    pixal3d: push the camera's virtual image border outward by N\n                          pixels of a 512 frame (default 0). Rarely useful: background\n                          removal already reframes around the subject, and extending\n                          past the cutout projects onto pixels that do not exist.\n      --no-naf            pixal3d: skip NAF guided upsampling (needs no naf.gguf, but\n                          the shape/texture stages then lose their high-frequency\n                          projection branch)\n      --gpu N             GPU index, <0 = CPU          (default 0)\n      --backend NAME      force a ggml backend: Vulkan | HTP | CPU | ...\n                          (HTP is the Qualcomm Hexagon NPU. Default: auto.\n                          Run trellis-devices to list what this build sees.\n                          Needed on Snapdragon, where the NPU and the Adreno\n                          GPU both register as GPU devices.)\n  -t, --threads N         CPU backend threads (default: all cores. ggml's own\n                          default is 4 regardless of core count.)\n      --sched on|off      run graphs through the multi-backend scheduler so ops\n                          the chosen backend cannot execute fall back to another\n                          (default: on unless the backend is the CPU). Required\n                          for --backend HTP, whose op coverage is partial.\n      --vulkan-fallback  with HTP, try Vulkan before CPU for unsupported ops\n                          (same as TRELLIS_VULKAN_FALLBACK=1)\n      --no-vulkan-fallback\n                          disable Vulkan fallback even if the environment enables it\n  -v, --verbose           per-stage timings, graph node counts, and a heartbeat\n                          while a backend compute is running (TRELLIS_VERBOSE=1;\n                          =2 also dumps the per-op histogram of each graph)\n  -s, --seed N            RNG seed                     (default 42)\n      --steps N           flow sampler steps (default 12). Lower is faster and\n                          rougher; useful for backend bring-up, where a CPU and\n                          an NPU run at the same N stay directly comparable.\n      --res 512|1024|1536 geometry resolution\n      --max-tokens N      HR token budget              (default 49152)\n      --bg-removal MODE   threshold | birefnet   (default: auto -- a pre-matted\n                          image keeps its alpha; otherwise BiRefNet when its model\n                          is present. The plain threshold matte cuts out specular\n                          highlights, which the flow then turns into holes.)\n      --birefnet          alias for --bg-removal birefnet\n      --no-texture        geometry only\n      --xatlas            xatlas UV unwrap (default)\n      --box-uv            voxel-native box projection (faster)\n      --band N            narrow-band DC remesh band width (default: auto \u2014\n                          res/512, i.e. 1 @512 / 2 @1024, which suppresses the\n                          res-1024 outer-skin speckle; N forces that width)\n      --decim GRID        legacy cluster-grid decimation (default: quadric\n                          simplify to 300K faces @1024 / 150K @512; 0 = none)\n      --atlas PX          UV atlas size (default 2048 @1024 / 1024 @512)\n      --tex-res N         texture PBR resolution 512/1024 (default: auto \u2014 drops\n                          a dense res-1024 decode to a clean res-512 PBR volume)\n      --webp on|off       encode GLB textures as WebP (default: on when built with\n                          WebP support; off = PNG)\n      --dump-bg           also write the background-removal cutout as <out>_cutout.png\n      --dump-post PATH    write the raw decoded mesh + sparse PBR volume to PATH and\n                          exit (skips remesh/decimate/UV/bake/GLB) -- for external\n                          post-processing pipelines\n      --bg-only           background removal only: write the cutout and skip the rest\n      --retopo GRID FIRST_FACES FINAL_FACES  native quad export (Linux, retopo build)\n      --retopo-atlas PX   quad atlas size: 1024, 2048, 4096 (default 4096)\n      --retopo-no-weld-fill  skip initial weld/fill before tetra remesh\n      --retopo-dual-pbr  decode 1024 PBR for quad export with 512 primary PBR\n      --retopo-workdir DIR   large intermediates (default .codex/retopo/runs)\n      --f32               f32 sparse-conv compute\n      --fa-fast           force F16 K/V + fast accumulation (default on HTP)\n      --fa-f32            use BF16 K/V + F32 accumulation (HTP opt-out)\n      --no-fa             disable FlashAttention\n      --require-gpu       refuse CPU fallback\n      --threads N         CPU backend threads      (default all cores)\n      --gss F  --gsh F    guidance strengths\n      --host H  --port P  trellis-server bind address\n      --voxply            also dump the voxel point cloud as .ply\n      --dump-slat         dump the structured latent to disk\n  -h, --help              show this help\n",
+  "wall_seconds": 11.064895125105977
+}

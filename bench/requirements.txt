@@ -1,0 +1,5 @@
+PyYAML==6.0.3
+Pillow==12.3.0
+psutil==7.2.2
+# Optional CUDA/Vulkan measurement: nvidia-ml-py (install in execution environment).
+# Optional embeddings: torch, transformers; audited local snapshots only, no remote code.

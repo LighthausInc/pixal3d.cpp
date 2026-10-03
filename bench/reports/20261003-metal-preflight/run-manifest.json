@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "run_id": "20261003-metal-preflight-v2",
+  "matrix_sha256": "5577d807a9d2eeb572213e243a5367a42699bb2e756f10a451326b112b434171",
+  "machine": {
+    "os": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "architecture": "arm64",
+    "cpu_count": 10,
+    "physical_memory_bytes": 68719476736,
+    "host": "metal"
+  },
+  "commits": {
+    "baseline": "1f432fd3f0689c504fa1e9b15b038c33584174d1",
+    "trellis_commit": "c0bed38c1578f7e36e3e50c8ff1e38fa0d47583f",
+    "storyboard_commit": "c3ab9f070aea30884d51934893b3b3317c0c44ec"
+  },
+  "settings": {
+    "steps": 12,
+    "atlas": 2048,
+    "timeout_seconds": 7200
+  },
+  "human_ratings": "pending",
+  "shipping_approved": false,
+  "execution_requested": true,
+  "measurement_status": "No quality recommendation until outputs and human ratings exist."
+}

@@ -1,0 +1,7 @@
+weights/*
+!weights/.gitkeep
+results/*
+!results/.gitkeep
+inputs/*/*.blend
+inputs/*/*.glb
+__pycache__/
