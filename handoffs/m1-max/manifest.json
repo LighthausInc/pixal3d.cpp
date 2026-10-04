@@ -1,0 +1,7 @@
+{
+  "file": "3dgen-mac-starter.zip",
+  "bytes": 440473,
+  "sha256": "b56796e39cff223c8530d733fcc93b25adc47bba03678f00747f5b7f022cbc0d",
+  "kind": "source and setup kit, not a built Mac app",
+  "verified": "archive CRC, executable script modes, Unix line endings, fixture inclusion"
+}
